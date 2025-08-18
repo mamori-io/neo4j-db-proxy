@@ -20,11 +20,11 @@ The purpose of the proxy is to support:
 
 ## Interaction Diagram
 
-<insert diagram here>
+![img.png](img.png)
 
-External system interfaces and helper classes are available at   <github here>
+External system interfaces and helper classes are available at  https://github.com/mamori-io/base-db-proxy
 
-Maven dependency:
+Base db proxy Maven dependency:
 ```xml
 <dependency>
     <groupId>io.mamori</groupId>
@@ -62,7 +62,7 @@ the proxy itself. For network protocol operations use Netty.
 
 ## Example Redis Project
 An example Redis database proxy project demonstrates an implementation and how to incorporate the external interfaces and
-classes into your code <insert github ref>
+classes into your code https://github.com/mamori-io/redis-db-proxy
 
 ## Throughput/Scaling Targets
 * Support 500 Concurrently Connected Clients/Sessions.
