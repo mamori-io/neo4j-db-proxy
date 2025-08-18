@@ -20,14 +20,16 @@ The purpose of the proxy is to support:
 
 ## Interaction Diagram
 
-External system interfaces and helper classes are available at   
+<insert diagram here>
+
+External system interfaces and helper classes are available at   <github here>
 
 Maven dependency:
 ```xml
 <dependency>
     <groupId>io.mamori</groupId>
     <artifactId>proxy-base</artifactId>
-    <version></version>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -60,7 +62,7 @@ the proxy itself. For network protocol operations use Netty.
 
 ## Example Redis Project
 An example Redis database proxy project demonstrates an implementation and how to incorporate the external interfaces and
-classes into your code.
+classes into your code <insert github ref>
 
 ## Throughput/Scaling Targets
 * Support 500 Concurrently Connected Clients/Sessions.
@@ -77,7 +79,6 @@ classes into your code.
 
 The Proxy base interfaces, classes and unit test helpers are available at 
 
-
 * TargetSystemConnectionDetailProvider. Main interface for connecting, authenticating and  logging.
 * Session. Implement this interface for Neo4J sessions.
 * SessionEvent. Session events. Use the Session.event callback to notify of session events. 
@@ -86,7 +87,7 @@ The Proxy base interfaces, classes and unit test helpers are available at
 
 ## Technology Stack
 * Java 24+
-* JUnit for testing
+* JUnit 5.X for testing
 * maven for builds.
 * Netty https://netty.io/ for network packet encoding and decoding operations.
 * logback and slf4j for logging
@@ -96,7 +97,7 @@ The Proxy base interfaces, classes and unit test helpers are available at
 * Catch and log all exceptions. No empty catch clauses.
 * The base package for all proxy classes is *io.mamori.proxy.neo4j*.
 * Use Netty threading model/platform threads.
-* Minimise 3rd party dependencies. 
+* Minimise 3rd party dependencies. No inclusion of 3rd party libraries with viral licences e.g GPL, AGPL etc.
 * Do not use Spring.
 
 See [pom.json](pom.xml)

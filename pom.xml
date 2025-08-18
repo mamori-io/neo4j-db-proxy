@@ -23,7 +23,7 @@
         <maven.compiler.source>23</maven.compiler.source>
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <netty.version>4.1.119.Final</netty.version>
+        <netty.version>4.1.124.Final</netty.version>
     </properties>
 
     <dependencies>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>io.mamori</groupId>
             <artifactId>proxy-base</artifactId>
-            <version></version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -73,20 +73,32 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
-                <version>4.9.3.2</version> <!-- Use the latest stable version -->
+                <version>4.9.3.2</version>
                 <dependencies>
-                    <!-- Optional: Specify a specific SpotBugs core version if needed -->
                     <dependency>
                         <groupId>com.github.spotbugs</groupId>
                         <artifactId>spotbugs</artifactId>
                         <version>4.9.3.2</version>
                     </dependency>
+
                 </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <failOnError>false</failOnError>
+                    <htmlOutput>true</htmlOutput>
+                    <outputDirectory>${project.build.directory}</outputDirectory>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
-                <version>12.1.1</version>
+                <version>12.1.3</version>
                 <configuration>
                     <nvdApiKey>14463082-b31b-41d9-bd5a-6c73c332e6da</nvdApiKey>
                     <suppressionFiles>project-supression.xml</suppressionFiles>
