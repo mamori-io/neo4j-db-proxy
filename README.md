@@ -60,9 +60,9 @@ Your project should include the following deliverables:
 Note, you are free to use the https://github.com/neo4j/neo4j-java-driver (Bolt) in any test or test client, but cannot use the driver in
 the proxy itself. For network protocol operations use Netty.
 
-## Example Redis Project
-An example Redis database proxy project demonstrates an implementation and how to incorporate the external interfaces and
-classes into your code https://github.com/mamori-io/redis-db-proxy
+## Reference Redis Project
+A reference Redis database proxy project is available to you to show an example implementation and how to incorporate the external interfaces and
+classes into your proxy code https://github.com/mamori-io/redis-db-proxy
 
 ## Throughput/Scaling Targets
 * Support 500 Concurrently Connected Clients/Sessions.
