@@ -3,7 +3,7 @@
 Project Brief/Requirements:
 
 Build a secure, responsive J2SE Neo4J/Bolt proxy that proxies communication between
-Neo4j clients and databases. The proxy should utilise and communicate using the Neo4j on-the-wire 
+Neo4j clients databases and external security systems. The proxy should utilise and communicate using the Neo4j on-the-wire 
 client-server network protocol (Bolt).
 
 Targets:
