@@ -61,7 +61,7 @@ Note, you are free to use the https://github.com/neo4j/neo4j-java-driver (Bolt) 
 the proxy itself. For network protocol operations use Netty.
 
 ## Reference Redis Project
-A reference Redis database proxy project is available to you to show an example implementation and how to incorporate the external interfaces and
+A reference Redis database proxy project is available as a guide to implementation and how to incorporate the external interfaces and
 classes into your proxy code https://github.com/mamori-io/redis-db-proxy
 
 ## Throughput/Scaling Targets
@@ -77,7 +77,7 @@ classes into your proxy code https://github.com/mamori-io/redis-db-proxy
 
 ### External System interfaces
 
-The Proxy base interfaces, classes and unit test helpers are available at 
+The Proxy base interfaces, classes and unit test helpers are available at https://github.com/mamori-io/base-db-proxy
 
 * TargetSystemConnectionDetailProvider. Main interface for connecting, authenticating and  logging.
 * Session. Implement this interface for Neo4J sessions.
