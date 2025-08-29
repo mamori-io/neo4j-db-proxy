@@ -100,7 +100,7 @@ The Proxy base interfaces, classes and unit test helpers are available at https:
 * Minimise 3rd party dependencies. No inclusion of 3rd party libraries with viral licences e.g GPL, AGPL etc.
 * Do not use Spring.
 
-See [pom.json](pom.xml)
+See [pom.xml](pom.xml)
 
 # Need more Info?
 Contacts: omasri@mamori.io and dparnell@mamori.io
